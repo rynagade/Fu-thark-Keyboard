@@ -54,12 +54,27 @@ Custom iOS keyboard extension for typing Elder and Younger Futhark runes with pr
 
 `Allow Full Access` is not required for this project because the extension does not request open access.
 
+## Screenshots
+
+These are placeholder media panels wired for GitHub. Replace them with real device captures in `docs/media/` when you have them.
+
+![Elder Futhark keyboard placeholder](./docs/media/elder-futhark-keyboard-placeholder.svg)
+
+![Younger Futhark keyboard placeholder](./docs/media/younger-futhark-keyboard-placeholder.svg)
+
+## Demo GIF
+
+Replace the placeholder below with a recorded demo such as `docs/media/futhark-keyboard-demo.gif` once you have a device capture.
+
+![Keyboard demo placeholder](./docs/media/futhark-keyboard-demo-placeholder.svg)
+
 ## Project Structure
 
 - [`Fu_thark_KeyboardApp.swift`](./Fúthark%20Keyboard/Fu_thark_KeyboardApp.swift): host app entry point
 - [`ContentView.swift`](./Fúthark%20Keyboard/ContentView.swift): host app UI
 - [`KeyboardViewController.swift`](./Fúthark%20Keyboard/KeyboardViewController.swift): keyboard extension layout and rune insertion logic
 - [`Info.plist`](./Fúthark%20Keyboard/Info.plist): keyboard extension configuration
+- [`docs/media`](./docs/media): README media assets
 
 ## Implementation Notes
 
@@ -75,4 +90,4 @@ Custom iOS keyboard extension for typing Elder and Younger Futhark runes with pr
 
 ## License
 
-No license file is included yet. All rights reserved until a license is added.
+Released under the MIT License. See [`LICENSE`](./LICENSE).
