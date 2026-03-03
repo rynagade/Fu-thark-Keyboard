@@ -11,7 +11,35 @@
 		A6703EF32AED762700BA73CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6703EF22AED762700BA73CE /* ContentView.swift */; };
 		A6703EF52AED762800BA73CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6703EF42AED762800BA73CE /* Assets.xcassets */; };
 		A6703EF82AED762800BA73CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6703EF72AED762800BA73CE /* Preview Assets.xcassets */; };
+		A6703F052AED765F00BA73CE /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6703F042AED765F00BA73CE /* KeyboardViewController.swift */; };
+			A6703F092AED766000BA73CE /* Futhark Keyboard Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A6703F022AED765F00BA73CE /* Futhark Keyboard Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A6703F162AED77BC00BA73CE /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6703F152AED77BC00BA73CE /* View.xib */; };
+		A6703F172AED77BC00BA73CE /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6703F152AED77BC00BA73CE /* View.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6703F072AED766000BA73CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6703EE52AED762700BA73CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6703F012AED765F00BA73CE;
+				remoteInfo = "Futhark Keyboard Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6703F0D2AED766000BA73CE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+					A6703F092AED766000BA73CE /* Futhark Keyboard Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A6703EED2AED762700BA73CE /* Fúthark Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fúthark Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +47,21 @@
 		A6703EF22AED762700BA73CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A6703EF42AED762800BA73CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6703EF72AED762800BA73CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+			A6703F022AED765F00BA73CE /* Futhark Keyboard Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Futhark Keyboard Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6703F042AED765F00BA73CE /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeyboardViewController.swift; path = "../Fúthark Keyboard/KeyboardViewController.swift"; sourceTree = "<group>"; };
+		A6703F062AED766000BA73CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Fúthark Keyboard/Info.plist"; sourceTree = "<group>"; };
+		A6703F152AED77BC00BA73CE /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = View.xib; path = "Fúthark Keyboard/View.xib"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A6703EEA2AED762700BA73CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6703EFF2AED765F00BA73CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				A6703EEF2AED762700BA73CE /* Fúthark Keyboard */,
+				A6703F032AED765F00BA73CE /* Fúthark Keyboard */,
 				A6703EEE2AED762700BA73CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				A6703EED2AED762700BA73CE /* Fúthark Keyboard.app */,
+					A6703F022AED765F00BA73CE /* Futhark Keyboard Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +108,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A6703F032AED765F00BA73CE /* Fúthark Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A6703F042AED765F00BA73CE /* KeyboardViewController.swift */,
+				A6703F062AED766000BA73CE /* Info.plist */,
+				A6703F152AED77BC00BA73CE /* View.xib */,
+			);
+			path = "Fúthark Keyboard";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,16 +128,35 @@
 				A6703EE92AED762700BA73CE /* Sources */,
 				A6703EEA2AED762700BA73CE /* Frameworks */,
 				A6703EEB2AED762700BA73CE /* Resources */,
+				A6703F0D2AED766000BA73CE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A6703F082AED766000BA73CE /* PBXTargetDependency */,
 			);
 			name = "Fúthark Keyboard";
 			productName = "Fúthark Keyboard";
 			productReference = A6703EED2AED762700BA73CE /* Fúthark Keyboard.app */;
 			productType = "com.apple.product-type.application";
 		};
+			A6703F012AED765F00BA73CE /* Futhark Keyboard Extension */ = {
+				isa = PBXNativeTarget;
+				buildConfigurationList = A6703F0A2AED766000BA73CE /* Build configuration list for PBXNativeTarget "Futhark Keyboard Extension" */;
+			buildPhases = (
+				A6703EFE2AED765F00BA73CE /* Sources */,
+				A6703EFF2AED765F00BA73CE /* Frameworks */,
+				A6703F002AED765F00BA73CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+				name = "Futhark Keyboard Extension";
+				productName = "Futhark Keyboard Extension";
+				productReference = A6703F022AED765F00BA73CE /* Futhark Keyboard Extension.appex */;
+				productType = "com.apple.product-type.app-extension";
+			};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +168,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					A6703EEC2AED762700BA73CE = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					A6703F012AED765F00BA73CE = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
@@ -116,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				A6703EEC2AED762700BA73CE /* Fúthark Keyboard */,
+					A6703F012AED765F00BA73CE /* Futhark Keyboard Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -126,7 +200,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6703EF82AED762800BA73CE /* Preview Assets.xcassets in Resources */,
+				A6703F162AED77BC00BA73CE /* View.xib in Resources */,
 				A6703EF52AED762800BA73CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6703F002AED765F00BA73CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6703F172AED77BC00BA73CE /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +225,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6703EFE2AED765F00BA73CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6703F052AED765F00BA73CE /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6703F082AED766000BA73CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+				target = A6703F012AED765F00BA73CE /* Futhark Keyboard Extension */;
+			targetProxy = A6703F072AED766000BA73CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A6703EF92AED762800BA73CE /* Debug */ = {
@@ -267,6 +366,7 @@
 		A6703EFC2AED762800BA73CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +396,7 @@
 		A6703EFD2AED762800BA73CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +423,56 @@
 			};
 			name = Release;
 		};
+		A6703F0B2AED766000BA73CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9525JNZG3M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fúthark Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Fúthark Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.jarius327.Fu-thark-Keyboard.Fu-thark-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6703F0C2AED766000BA73CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9525JNZG3M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fúthark Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Fúthark Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.jarius327.Fu-thark-Keyboard.Fu-thark-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +490,15 @@
 			buildConfigurations = (
 				A6703EFC2AED762800BA73CE /* Debug */,
 				A6703EFD2AED762800BA73CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+			A6703F0A2AED766000BA73CE /* Build configuration list for PBXNativeTarget "Futhark Keyboard Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6703F0B2AED766000BA73CE /* Debug */,
+				A6703F0C2AED766000BA73CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
