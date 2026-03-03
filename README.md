@@ -64,7 +64,7 @@ Custom iOS keyboard extension for typing Elder and Younger Futhark runes with pr
 
 Animated demo of switching layouts and typing runes:
 
-![Animated demo of the Futhark keyboard](./docs/media/futhark-keyboard-demo.gif)
+<img src="./docs/media/futhark-keyboard-demo.gif" alt="Animated demo of the Futhark keyboard" width="321" />
 
 ## Project Structure
 
