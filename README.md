@@ -56,17 +56,15 @@ Custom iOS keyboard extension for typing Elder and Younger Futhark runes with pr
 
 ## Screenshots
 
-These are placeholder media panels wired for GitHub. Replace them with real device captures in `docs/media/` when you have them.
-
-![Elder Futhark keyboard placeholder](./docs/media/elder-futhark-keyboard-placeholder.svg)
-
-![Younger Futhark keyboard placeholder](./docs/media/younger-futhark-keyboard-placeholder.svg)
+| Elder Futhark | Younger Futhark |
+| --- | --- |
+| ![Elder Futhark keyboard screenshot](./docs/media/elder-futhark-keyboard.jpeg) | ![Younger Futhark keyboard screenshot](./docs/media/younger-futhark-keyboard.jpeg) |
 
 ## Demo GIF
 
-Replace the placeholder below with a recorded demo such as `docs/media/futhark-keyboard-demo.gif` once you have a device capture.
+Animated demo of switching layouts and typing runes:
 
-![Keyboard demo placeholder](./docs/media/futhark-keyboard-demo-placeholder.svg)
+![Animated demo of the Futhark keyboard](./docs/media/futhark-keyboard-demo.gif)
 
 ## Project Structure
 
